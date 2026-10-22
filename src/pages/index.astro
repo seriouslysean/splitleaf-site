@@ -46,8 +46,12 @@ const schema = {
     </main>
     <footer>
       <small>
-        {PUBLIC_BUSINESS_NAME}{PUBLIC_BUSINESS_PHONE && (
-          <Fragment> · <a href={`tel:${PUBLIC_BUSINESS_PHONE_E164}`}>{PUBLIC_BUSINESS_PHONE}</a></Fragment>
+        {PUBLIC_BUSINESS_NAME}
+        {PUBLIC_BUSINESS_PHONE && (
+          <Fragment>
+            {' '}
+            · <a href={`tel:${PUBLIC_BUSINESS_PHONE_E164}`}>{PUBLIC_BUSINESS_PHONE}</a>
+          </Fragment>
         )}
       </small>
     </footer>
