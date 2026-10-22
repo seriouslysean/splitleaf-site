@@ -1,36 +1,38 @@
 {
   "name": "splitleaf.net",
   "version": "1.0.0",
+  "private": true,
   "description": "Website for splitleaf.net",
   "homepage": "https://github.com/seriouslysean/splitleaf.net#readme",
   "bugs": {
     "url": "https://github.com/seriouslysean/splitleaf.net/issues"
   },
+  "license": "MIT",
+  "author": "Sean Kennedy <sean@codeserious.com>",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/seriouslysean/splitleaf.net.git"
   },
-  "license": "MIT",
-  "author": "Sean Kennedy <sean@codeserious.com>",
   "type": "module",
-  "private": true,
-  "engines": {
-    "node": ">=22.23.4"
-  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "oxlint .",
+    "lint:fix": "oxlint . --fix",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "@astrojs/compiler-rs": "^0.5.2",
     "astro": "^7.4.2",
-    "eslint": "^9.39.4",
-    "eslint-plugin-astro": "^1.7.0",
-    "globals": "^17.13.0",
+    "oxfmt": "^0.74.0",
+    "oxlint": "^1.89.0",
     "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=22.23.4"
   }
 }
