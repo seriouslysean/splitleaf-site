@@ -25,7 +25,7 @@
     "format:check": "oxfmt --check"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.10",
+    "@astrojs/check": "^0.9.11",
     "@astrojs/compiler-rs": "^0.5.2",
     "astro": "^7.4.2",
     "oxfmt": "^0.74.0",
