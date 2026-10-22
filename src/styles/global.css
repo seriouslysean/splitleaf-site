@@ -13,15 +13,14 @@ body {
   min-block-size: 100svh;
   display: grid;
   grid-template-rows: 1fr auto;
-  font-family: system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-family: system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
   color: var(--fg);
   background-color: var(--bg);
-  background-image:
-    radial-gradient(
-      ellipse 80% 70% at 50% 35%,
-      oklch(from var(--bg) calc(l + 0.06) c h),
-      var(--bg) 70%
-    );
+  background-image: radial-gradient(
+    ellipse 80% 70% at 50% 35%,
+    oklch(from var(--bg) calc(l + 0.06) c h),
+    var(--bg) 70%
+  );
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
