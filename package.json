@@ -28,8 +28,8 @@
     "@astrojs/check": "^0.9.12",
     "@astrojs/compiler-rs": "^0.5.2",
     "astro": "^7.4.2",
-    "oxfmt": "^0.74.0",
-    "oxlint": "^1.89.0",
+    "oxfmt": "^0.75.0",
+    "oxlint": "^1.90.0",
     "typescript": "^5.9.0"
   },
   "engines": {
